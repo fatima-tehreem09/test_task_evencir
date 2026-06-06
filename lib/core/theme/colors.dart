@@ -17,4 +17,12 @@ abstract final class AppColors {
   static const avatarBackground = Color(0xffE8847C);
   static const weightTrendGreen = Color(0xff4ADE80);
   static const dividerGrey = Color(0xff2A2A2E);
+  static const sheetBackground = Color(0xff232326);
+  static const sheetHandle = Color(0xffA1A5B7);
+  static const planHeaderDivider = Color(0xff48A4E5);
+  static const planWeekDividerPurple = Color(0xff8B7CF6);
+  static const planArmsTagBackground = Color(0xff1B3D45);
+  static const planArmsTagText = Color(0xff20B76F);
+  static const planLegTagBackground = Color(0xff1A2A3D);
+  static const planLegTagText = Color(0xff48A4E5);
 }
