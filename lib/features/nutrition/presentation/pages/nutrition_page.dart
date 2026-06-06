@@ -17,6 +17,23 @@ class NutritionPage extends StatefulWidget {
 
 class _NutritionPageState extends State<NutritionPage> {
   int _selectedDateIndex = 1;
+  late DateTime _selectedDate;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedDate = DateTime.now();
+  }
+
+  String get _dateHeader {
+    final now = DateTime.now();
+    final isToday = _selectedDate.year == now.year &&
+        _selectedDate.month == now.month &&
+        _selectedDate.day == now.day;
+    return isToday
+        ? DateTimeUtils.todayHeader
+        : DateTimeUtils.formatDateHeader(_selectedDate);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +46,13 @@ class _NutritionPageState extends State<NutritionPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const NutritionTopBar(),
+              NutritionTopBar(
+                onDateSelected: (date) {
+                  setState(() => _selectedDate = date);
+                },
+              ),
               24.heightBox,
-              Text(DateTimeUtils.todayHeader, style: theme.bold16),
+              Text(_dateHeader, style: theme.bold16),
               16.heightBox,
               CalendarStrip(
                 selectedIndex: _selectedDateIndex,
