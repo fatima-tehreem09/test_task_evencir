@@ -13,4 +13,7 @@ abstract final class AppAssets {
   static const String arrowRight = '$svgs/arrow-right.svg';
   static const String arrow = '$svgs/arrow.svg';
   static const String dropdown = '$svgs/dropdown.svg';
+  static const String arms = '$svgs/arms.svg';
+  static const String legs = '$svgs/legs.svg';
+  static const String weights = '$svgs/weights.svg';
 }

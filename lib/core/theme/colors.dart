@@ -20,7 +20,7 @@ abstract final class AppColors {
   static const sheetBackground = Color(0xff232326);
   static const sheetHandle = Color(0xffA1A5B7);
   static const planHeaderDivider = Color(0xff48A4E5);
-  static const planWeekDividerPurple = Color(0xff8B7CF6);
+  static const planWeekDividerPurple = Color(0xff4855DF);
   static const planArmsTagBackground = Color(0xff1B3D45);
   static const planArmsTagText = Color(0xff20B76F);
   static const planLegTagBackground = Color(0xff1A2A3D);
