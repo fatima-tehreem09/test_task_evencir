@@ -17,4 +17,5 @@ abstract final class AppAssets {
   static const String legs = '$svgs/legs.svg';
   static const String weights = '$svgs/weights.svg';
   static const String happy = '$svgs/happy.svg';
+  static const String gradient = '$svgs/gradient.svg';
 }

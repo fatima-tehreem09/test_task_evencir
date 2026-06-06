@@ -21,20 +21,12 @@ class MoodPage extends StatelessWidget {
             top: 0,
             left: 0,
             right: 0,
-            height: screenHeight * 0.4,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    const Color(0xff1B3D45).withValues(alpha: 0.55),
-                    Colors.transparent,
-                  ],
-                ),
-              ),
+            child: Container(
+              color: AppColors.primaryBlack.withValues(alpha: 0.1),
+              child: SvgPicture.asset(AppAssets.gradient),
             ),
           ),
+
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
