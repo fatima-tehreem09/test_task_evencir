@@ -11,5 +11,6 @@ abstract final class AppAssets {
   static const String dayTrack = '$svgs/day-track.svg';
   static const String arrowTopRight = '$svgs/arrow-top-right.svg';
   static const String arrowRight = '$svgs/arrow-right.svg';
+  static const String arrow = '$svgs/arrow.svg';
   static const String dropdown = '$svgs/dropdown.svg';
 }
