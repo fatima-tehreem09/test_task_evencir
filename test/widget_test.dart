@@ -34,6 +34,19 @@ void main() {
     expect(find.text('Leg Workout'), findsOneWidget);
   });
 
+  testWidgets('Mood tab shows mood tracking UI', (WidgetTester tester) async {
+    await tester.pumpWidget(const App());
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('Mood'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Start your day'), findsOneWidget);
+    expect(find.text('How are you feeling at the Moment?'), findsOneWidget);
+    expect(find.text('Calm'), findsOneWidget);
+    expect(find.text('Continue'), findsOneWidget);
+  });
+
   testWidgets('Dropdown opens calendar bottom sheet', (WidgetTester tester) async {
     await tester.pumpWidget(const App());
     await tester.pumpAndSettle();
